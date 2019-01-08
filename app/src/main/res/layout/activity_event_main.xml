@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".events.EventMainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/event_title_height"
+        android:background="@color/color_title_bar">
+
+        <ImageView
+            android:id="@+id/img_back_press"
+            android:layout_width="@dimen/event_title_height"
+            android:layout_height="@dimen/event_title_height"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:id="@+id/txt_event_type"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/event_title_height"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="EVENTS"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_title"
+            android:fontFamily="@font/roboto_bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_filter_view"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/event_title_height"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_fillter"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/event_title_height"
+            android:padding="@dimen/event_ll_padding"
+            android:src="@drawable/ic_filter_list_black_24dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/event_title_height"
+            android:gravity="center"
+            android:padding="@dimen/event_ll_padding"
+            android:text="Filter"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_view_size"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_regular"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rvel_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_title_bar"
+        android:layout_marginLeft="@dimen/event_marginleft"
+        android:layout_marginRight="@dimen/event_marginright"
+
+        android:layout_marginTop="@dimen/event_marginleft"
+        android:layout_marginBottom="@dimen/event_marginright"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txt_today_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/event_text_padding"
+            android:text=" "
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_event_title"
+            android:layout_centerVertical="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true" />
+
+        <!--<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_select_event_outer_shape"
+            android:layout_margin="3dp">
+
+            <ImageView
+                android:id="@+id/img_grid_view"
+                android:layout_width="@dimen/event_type_view_width"
+                android:layout_height="@dimen/event_type_view_height"
+                android:gravity="center_vertical"
+                android:padding="@dimen/event_type_select_padding"
+                android:src="@drawable/ic_calandar_grid_list"
+                android:background="@drawable/bg_select_event_selected_shape"
+                />
+
+            <ImageView
+                android:id="@+id/img_list_view"
+                android:layout_width="@dimen/event_type_view_width"
+                android:layout_height="@dimen/event_type_view_height"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/event_type_select_padding"
+                android:background="@drawable/bg_select_event_un_selected_shape"
+                android:src="@drawable/ic_calandar_bullet_list_drak"/>
+&lt;!&ndash;                android:padding="@dimen/event_type_non_select_padding"
+&ndash;&gt;
+
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_select_event_outer_shape"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="1dp"
+                >
+                <ImageButton
+                    android:id="@+id/img_grid_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_select_event_selected_shape"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_calandar_grid_list_drak"
+                    />
+                <ImageButton
+                    android:id="@+id/img_list_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_select_event_un_selected_shape"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_calandar_bullet_list"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <CalendarView
+        android:id="@+id/cldr_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rvel_title_view"
+        android:layout_centerHorizontal="true"
+        android:background="#beffffff"
+        android:firstDayOfWeek="1"
+        android:visibility="gone"></CalendarView>
+
+    <include
+        android:id="@+id/cldr_view1"
+        layout="@layout/view_caladar_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_event_details"
+        android:layout_below="@+id/rvel_title_view"
+        android:layout_marginLeft="@dimen/event_marginleft"
+        android:layout_marginRight="@dimen/event_marginright"
+        android:visibility="visible" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_event_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+
+        <!--Custom calandar view-->
+
+        <LinearLayout
+            android:id="@+id/ll_event_type_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/event_marginleft"
+            android:layout_marginRight="@dimen/event_marginright"
+            android:layout_marginTop="@dimen/event_ll_padding"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="@dimen/event_type_img_width"
+                    android:layout_height="@dimen/event_type_img_height"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/bg_annual_event_color"
+                    android:padding="@dimen/event_ll_padding" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/event_ll_padding"
+                    android:text="Annual Event"
+                    android:textColor="@color/txt_event_type_color"
+                    android:textSize="@dimen/event_text_size"
+                    android:fontFamily="@font/roboto_regular"
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/event_type_img_width"
+                    android:layout_height="@dimen/event_type_img_height"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/bg_hastham_event_color"
+                    android:padding="@dimen/event_ll_padding" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/event_ll_padding"
+                    android:text="Hastham"
+                    android:textColor="@color/txt_event_type_color"
+                    android:textSize="@dimen/event_text_size"
+                    android:fontFamily="@font/roboto_regular"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+
+                    android:layout_width="@dimen/event_type_img_width"
+                    android:layout_height="@dimen/event_type_img_height"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/bg_possam_event_color"
+                    android:padding="@dimen/event_ll_padding" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/event_ll_padding"
+                    android:text="Poosam"
+                    android:textColor="@color/txt_event_type_color"
+                    android:textSize="@dimen/event_text_size"
+                    android:fontFamily="@font/roboto_regular"/>
+
+                <ImageView
+                    android:layout_width="@dimen/event_type_img_width"
+                    android:layout_height="@dimen/event_type_img_height"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/bg_swamigal_visit_event_color"
+
+                    android:padding="@dimen/event_ll_padding" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/event_ll_padding"
+                    android:text="Swamigal Visit"
+                    android:textColor="@color/txt_event_type_color"
+                    android:textSize="@dimen/event_text_size"
+                    android:fontFamily="@font/roboto_regular"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_event_today"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_event_type_view"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_event_today"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/event_marginleft"
+                android:layout_marginRight="@dimen/event_marginright"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/event_ll_padding"
+                android:text="Events on 23-10-2018"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/event_text_size"
+                android:fontFamily="@font/roboto_regular"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_event_today"
+            android:layout_marginBottom="@dimen/event_bottom_margin"
+            android:layout_marginLeft="@dimen/event_marginleft"
+            android:layout_marginRight="@dimen/event_marginright"
+            android:background="@color/bg_event_title_color"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/bg_event_time_color"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/event_bottom_padding">
+
+                <TextView
+                    android:id="@+id/txt_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_vertical"
+                    android:text="05:30"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/event_text_size"
+                    android:fontFamily="@font/roboto_regular"/>
+
+                <TextView
+                    android:id="@+id/txt_am_pm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_vertical"
+                    android:text="PM"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/event_text_size"
+                    android:fontFamily="@font/roboto_regular"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+
+                android:padding="@dimen/event_bottom_padding"
+
+                >
+
+                <TextView
+                    android:id="@+id/txt_event_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:padding="@dimen/event_ll_padding"
+                    android:text="Swamigal visit"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/text_view_size16"
+                    android:fontFamily="@font/roboto_regular"/>
+
+                <TextView
+                    android:id="@+id/txt_event_discription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:padding="@dimen/event_ll_padding"
+
+                    android:text="Some Discription here applay"
+                    android:textColor="@color/txt_event_type_color"
+
+                    android:textSize="@dimen/dashboard_text_size"
+                    android:fontFamily="@font/roboto_regular"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_show_envent_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/event_ll_padding"
+
+                android:src="@drawable/ic_view_event_deails_24dp"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

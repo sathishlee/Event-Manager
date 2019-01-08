@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".userProfile.UploadProfilePhotoActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/event_title_height"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/img_back_press"
+            android:layout_width="@dimen/event_title_height"
+            android:layout_height="@dimen/event_title_height"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/event_title_height"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Upload Photo"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_title"
+            android:fontFamily="@font/roboto_bold"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/but_pick_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_title_view"
+        android:layout_margin="@dimen/profile_activity_margin_left"
+        android:background="@drawable/bg_primary_button_shape"
+        android:text="@string/strpickImage"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        android:fontFamily="@font/roboto_bold"/>
+
+    <ImageView
+        android:id="@+id/img_selected_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/but_upload_image"
+        android:layout_below="@+id/but_pick_image"
+        android:layout_margin="@dimen/profile_activity_margin_left"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_launcher" />
+
+
+    <Button
+        android:id="@+id/but_upload_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/profile_activity_margin_left"
+        android:background="@drawable/bg_primary_button_shape"
+        android:text="@string/struploadImage"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        android:fontFamily="@font/roboto_bold"/>
+</RelativeLayout>

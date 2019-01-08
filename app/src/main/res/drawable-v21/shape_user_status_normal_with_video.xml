@@ -1,0 +1,17 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <corners
+        android:radius="@dimen/dashboard_shape_img_strok_width"/>
+    <gradient
+        android:angle="90"
+         />
+    <solid
+        android:color="@color/colorPrimary"/>
+    <size
+        android:width="@dimen/dashboard_shape_img_width"
+        android:height="@dimen/dashboard_shape_img_height" />
+    <!--<stroke
+        android:width="@dimen/dashboard_shape_img_strok_width"
+        android:color="@color/colorPrimary" />-->
+</shape>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "392522347238",
+    "firebase_url": "https://sss-sangam.firebaseio.com",
+    "project_id": "sss-sangam",
+    "storage_bucket": "sss-sangam.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:392522347238:android:f0d77ff2d4dd153b",
+        "android_client_info": {
+          "package_name": "com.satvatinfosole.ssss.sangam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "392522347238-3q4b5jfsgu2ppbvhnrffd8s3fqmge470.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.satvatinfosole.ssss.sangam",
+            "certificate_hash": "6e18dfe6877b4c6c190faf6d92e4a24d2f5d1d73"
+          }
+        },
+        {
+          "client_id": "392522347238-ia7u53u0ptsf24qoeh8aa66qcvsq66t2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDxfwB3uQCb8JSVNGIGxNS5GHeMSkC-K0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "392522347238-ia7u53u0ptsf24qoeh8aa66qcvsq66t2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

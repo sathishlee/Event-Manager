@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".signup.PrimaryDetailsActivity">
+
+    <ImageView
+        android:id="@+id/img_title_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/img_title_banner" />
+
+    <TextView
+        android:id="@+id/txt_title_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_title_banner"
+        android:gravity="center"
+        android:text="@string/registration"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_title"
+
+        android:padding="@dimen/primary_details_registration_text_padding"
+        android:fontFamily="@font/roboto_medium"/>
+    <TextView
+        android:id="@+id/txt_primary_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_title_reg"
+        android:gravity="center"
+        android:text="@string/primary_details"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/button_text_size"
+        android:fontFamily="@font/roboto_medium"/>
+    <TextView
+        android:id="@+id/txt_greeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_primary_details"
+        android:visibility="gone"/>
+    <ScrollView
+        android:id="@+id/scroll_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_primary_details">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:padding="@dimen/primary_details_registration_ll_view_padding">
+
+
+            <!-- First Name Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:text="@string/first_name"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size16"
+                android:fontFamily="@font/roboto_regular"
+                />
+
+            <EditText
+                android:id="@+id/input_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/first_name"
+                android:inputType="text"
+                android:textColor="@color/primary_text"
+                android:background="@color/bg_edit_text_color"
+                android:textSize="@dimen/text_view_size"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:fontFamily="@font/roboto_regular"
+
+                />
+
+
+            <!-- Last Name Label -->
+            <!--<android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:text="@string/last_name"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size16"
+                android:fontFamily="@font/roboto_regular"
+                />
+
+            <EditText
+                android:id="@+id/input_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/last_name"
+                android:inputType="text"
+                android:textColor="@color/primary_text"
+                android:background="@color/bg_edit_text_color"
+                android:textSize="@dimen/text_view_size"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:fontFamily="@font/roboto_regular"/>
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <!-- Father's Name Label -->
+            <!--<android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:text="@string/father_name"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size16"
+                android:fontFamily="@font/roboto_regular"
+                />
+            <EditText
+                android:id="@+id/input_Father_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Father's Name"
+                android:inputType="text"
+                android:textColor="@color/primary_text"
+                android:background="@color/bg_edit_text_color"
+                android:textSize="@dimen/text_view_size"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:fontFamily="@font/roboto_regular"
+                />
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:text="@string/gender"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size16"
+                android:fontFamily="@font/roboto_regular"
+
+                />
+
+            <RadioGroup
+                android:id="@+id/rg_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:weightSum="2"
+                >
+
+                <RadioButton
+                    android:id="@+id/rb_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Male"
+                    android:textSize="@dimen/text_view_size16"
+                    android:textColor="@color/primary_text"
+                    android:fontFamily="@font/roboto_regular"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rb_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Female"
+                    android:textSize="@dimen/text_view_size16"
+                    android:textColor="@color/primary_text"
+                    android:fontFamily="@font/roboto_regular"
+                    />
+            </RadioGroup>
+
+
+            <!-- Spouse Name Label -->
+            <!-- <android.support.design.widget.TextInputLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="8dp"
+                 android:layout_marginBottom="8dp">-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:text="@string/spouse_name"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size16"
+                android:visibility="gone"
+                android:fontFamily="@font/roboto_regular"/>
+
+            <EditText
+                android:id="@+id/input_spouse_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/spouse_name"
+                android:inputType="text"
+                android:textColor="@color/primary_text"
+                android:background="@color/bg_edit_text_color"
+                android:textSize="@dimen/text_view_size"
+                android:padding="@dimen/primary_details_text_view_padding"
+
+                android:visibility="gone"
+                android:fontFamily="@font/roboto_regular"/>
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <!-- Dob Label -->
+            <!-- <android.support.design.widget.TextInputLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="8dp"
+                 android:layout_marginBottom="8dp">-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:text="@string/dob"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size16"
+                android:fontFamily="@font/roboto_regular"
+                />
+
+            <EditText
+                android:id="@+id/input_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date Of Birth"
+                android:inputType="text"
+                android:textColor="@color/primary_text"
+                android:background="@color/bg_edit_text_color"
+                android:textSize="@dimen/text_view_size"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:fontFamily="@font/roboto_regular"/>
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="@dimen/primary_details_next_button_marginbottom"
+                android:layout_marginTop="@dimen/primary_details_next_button_margintop"
+                android:background="@drawable/bg_primary_button_shape"
+                android:padding="@dimen/primary_details_next_button_padding"
+                android:text="Next"
+                android:textSize="@dimen/button_text_size"
+                android:textColor="@color/text_white"
+                android:fontFamily="@font/roboto_bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

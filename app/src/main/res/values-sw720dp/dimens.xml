@@ -1,0 +1,166 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">32dp</dimen>
+    <dimen name="activity_vertical_margin">32dp</dimen>
+
+    <dimen name="text_title">48sp</dimen>
+    <dimen name="text_event_title">40sp</dimen>
+    <dimen name="button_text_size">36dp</dimen>
+    <dimen name="text_view_size">36sp</dimen>
+    <dimen name="text_view_size16">32sp</dimen>
+    <dimen name="text_view_date_size">24dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">352dp</dimen>
+    <dimen name="fab_margin">32dp</dimen>
+
+    <!--Dash board-->
+
+    <dimen name="dashboard_marginleft">40dp</dimen>
+    <dimen name="dashboard_marginright">40dp</dimen>
+    <dimen name="dashboard_rel_1_margintop">120dp</dimen>
+    <dimen name="dashboard_ll_1_margintop">100dp</dimen>
+    <dimen name="dashboard_ll_1_marginstart">40dp</dimen>
+    <dimen name="dashboard_ll_text_marginstart">220dp</dimen>
+    <dimen name="dashboard_ll_text_margintop">240dp</dimen>
+    <dimen name="dashboard_ll_text_padding">10dp</dimen>
+
+    <dimen name="dashboard_img_go_profile_size">40dp</dimen>
+
+
+    <dimen name="dashboard_ll_img_width">160dp</dimen>
+    <dimen name="dashboard_ll_img_height">160dp</dimen>
+    <dimen name="dashboard_ll_img_start">80dp</dimen>
+    <dimen name="dashboard_ll_img_top">140dp</dimen>
+    <dimen name="dashboard_ll_img_padding">20dp</dimen>
+
+    <dimen name="dashboard_ll_dot_img_width">40dp</dimen>
+    <dimen name="dashboard_ll_dot_img_height">40dp</dimen>
+    <dimen name="dashboard_ll_dot_img_start">180dp</dimen>
+    <dimen name="dashboard_ll__dot_img_top">190dp</dimen>
+
+    <dimen name="dashboard_rvl_flash_padding">40dp</dimen>
+    <dimen name="dashboard_rvl_flash_text_height">100dp</dimen>
+    <dimen name="dashboard_rvl_flash_text_padding">10dp</dimen>
+
+    <dimen name="dashboard_ll_bottom_margin">40dp</dimen>
+    <dimen name="dashboard_bottom_morgin">80dp</dimen>
+
+    <dimen name="dashboard_text_size">28sp</dimen>
+
+
+    <dimen name="dashboard_shape_img_strok_width">6dp</dimen>
+    <dimen name="dashboard_shape_img_radius">10dp</dimen>
+    <dimen name="dashboard_shape_img_width">100dp</dimen>
+    <dimen name="dashboard_shape_img_height">100dp</dimen>
+
+    <!--profile details activity-->
+    <dimen name="txt_user_profile_lable_size">32sp</dimen>
+    <dimen name="txt_user_profile_content_size">36dp</dimen>
+    <dimen name="actionBarSize" />
+
+
+    <!--event main calandar view-->
+    <dimen name="event_title_height">100dp</dimen>
+    <dimen name="event_marginleft">20dp</dimen>
+    <dimen name="event_marginright">20dp</dimen>
+    <dimen name="event_text_padding">10dp</dimen>
+    <dimen name="event_textdate_time_padding">20dp</dimen>
+    <dimen name="event_type_view_height">60dp</dimen>
+    <dimen name="event_type_view_width">60dp</dimen>
+    <dimen name="event_type_select_padding">10dp</dimen>
+    <dimen name="event_type_non_select_padding">20dp</dimen>
+    <dimen name="event_ll_padding">10dp</dimen>
+    <dimen name="event_type_img_height">40dp</dimen>
+    <dimen name="event_type_img_width">40dp</dimen>
+    <dimen name="event_text_size">24sp</dimen>
+
+    <dimen name="event_bottom_margin">10dp</dimen>
+    <dimen name="event_bottom_padding">20dp</dimen>
+    <dimen name="event_day_cel_height">150dp</dimen>
+    <dimen name="event_image_placeholder_margin">60dp</dimen>
+
+
+    <!--photo-->
+    <dimen name="photo_gallery_margin">20dp</dimen>
+    <dimen name="photo_gallery_text_padding">10dp</dimen>
+    <dimen name="photo_gallery_recycler_view_height">200dp</dimen>
+
+    <!--photo rec_list image-->
+    <dimen name="img_height">200dp</dimen>
+    <dimen name="img_weight">200dp</dimen>
+
+    <!--photo galary view-->
+    <dimen name="grid_margin">8dp</dimen>
+    <dimen name="grid_margin_radius">4dp</dimen>
+    <dimen name="grid_image_height">300dp</dimen>
+    <dimen name="gird_text_view_size">32sp</dimen>
+    <dimen name="grid_date_text_size">27sp</dimen>
+
+    <!--alert dialog box-->
+
+    <dimen name="alert_box_title_text">48sp</dimen>
+    <dimen name="alert_box_message_text">36sp</dimen>
+    <dimen name="alert_box_message_padding">10dp</dimen>
+    <dimen name="alert_box_message_margin">40dp</dimen>
+    <dimen name="alert_box_button_block_margin">20dp</dimen>
+
+    <!--RequestActivity-->
+
+    <dimen name="request_title_margin_top">100dp</dimen>
+    <dimen name="request_button_margin_top">50dp</dimen>
+    <dimen name="request_button_margin">20dp</dimen>
+    <dimen name="request_layout_padding">50dp</dimen>
+    <dimen name="request_text_padding">10dp</dimen>
+
+
+    <!--MainActivate-->
+    <dimen name="main_activity_margin">8dp</dimen>
+    <dimen name="main_activity_swamigal_name_text_size">16sp</dimen>
+    <dimen name="main_activity_padding">10dp</dimen>
+    <dimen name="main_activity_image_padding">30dp</dimen>
+    <dimen name="main_activity_text_view_size">36sp</dimen>
+
+    <!--Log in-->
+    <dimen name="login_activity_margin">8dp</dimen>
+    <dimen name="login_activity_text_login_margintop">40dp</dimen>
+    <dimen name="login_activity_ll_login_padding">50dp</dimen>
+    <dimen name="login_activity_padding">10dp</dimen>
+    <dimen name="login_activity_login_button_margintop">48dp</dimen>
+    <dimen name="login_activity_login_button_marginbottom">48dp</dimen>
+    <dimen name="login_activity_text_morgin">20dp</dimen>
+
+    <!--sign up-->
+       <dimen name="primary_details_registration_text_padding">20dp</dimen>
+    <dimen name="primary_details_registration_ll_view_padding">50dp</dimen>
+    <dimen name="primary_details_text_view_padding">10dp</dimen>
+    <dimen name="primary_details_next_button_margintop">48dp</dimen>
+    <dimen name="primary_details_next_button_marginbottom">48dp</dimen>
+    <dimen name="primary_details_next_button_padding">24dp</dimen>
+
+
+    <!--Event list-->
+    <dimen name="event_list_ll_padding">10dp</dimen>
+    <dimen name="event_list_ll_date_time_view_padding">10dp</dimen>
+    <dimen name="event_list_ll_marginleft">4dp</dimen>
+    <dimen name="event_list_text_view_padding">10dp</dimen>
+
+    <!--feedback-->
+    <dimen name="feedback_title_height">120dp</dimen>
+
+    <!--gallery alert box-->
+    <dimen name="gallery_dailog_box_morgin">20dp</dimen>
+    <dimen name="gallery_dailog_box_padding">20dp</dimen>
+    <dimen name="gallery_dailog_box_imgage_size">100dp</dimen>
+    <dimen name="gallery_dailog_box_devider_heaght">4dp</dimen>
+
+
+    <!--card view-->
+    <dimen name="cardview_margin">10dp</dimen>
+    <dimen name="cardview_cardCornerRadius">10dp</dimen>
+    <dimen name="cardview_elevation">10dp</dimen>
+
+
+
+    <dimen name="frame_layout_hight">600dp</dimen>
+
+</resources>

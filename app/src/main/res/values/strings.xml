@@ -1,0 +1,172 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">SSSS Sangam</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="select">--Select One--</string>
+    <string name="item1">Existing Devotee</string>
+    <string name="item2">Referenced by a Devotee</string>
+    <string name="item3">Search Engine</string>
+    <string name="item4">Magazines and News Papers</string>
+
+
+    <string name="log_in">LOGIN</string>
+    <string name="registration">REGISTRATION</string>
+    <string name="primary_details">PRIMARY DETAILS</string>
+    <string name="contact_details">CONTACT DETAILS</string>
+    <string name="user_login_details">USER LOGIN DETAILSS</string>
+    <string name="verify_email">VERIFY EMAIL</string>
+    <string name="user_name">User Name</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name /Initial</string>
+    <string name="father_name">Father Name</string>
+    <string name="gender">Gender</string>
+    <string name="spouse_name">Spouse Name</string>
+    <string name="dob">Date Of Birth</string>
+    <string name="address1">Address Line 1</string>
+    <string name="address2">Address Line 2</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="country">Country</string>
+    <string name="pincode">Pin Code</string>
+    <string name="mobile">Mobile Number</string>
+    <string name="landline">Landline Number</string>
+    <string name="password">Password</string>
+    <string name="retypepassword">ReType Password</string>
+    <string name="user_id">User Id</string>
+    <string name="email_id">Email ID</string>
+    <string name="send_otp">Send Request</string>
+    <string name="send_email">Send E-Mail</string>
+    <string name="email_for_verification">Email For Verification</string>
+
+    <string name="str_but_submit">Submit</string>
+    <string name="str_but_ok">Ok</string>
+    <string name="str_but_cancel">Cancel</string>
+    <string name="title_activity_dash_board_home">DashBoardHomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!--Dash board-->
+    <string name="strflas_hnews">Flash News</string>
+    <string name="strlive_streaming">Live Video</string>
+    <string name="struser_profile">User Profile</string>
+    <string name="strcalandar">Calandar</string>
+    <string name="strevents">Events</string>
+    <string name="str_gallery">Gallery</string>
+    <string name="strquiz">Quiz</string>
+    <string name="strfeedback">Feedback</string>
+    <string name="strcontact_us">Contact Us</string>
+    <string name="strnotifications">Alerts</string>
+
+
+    <!--UserProfile-->
+    <string name="str_sign_out">Sign Out</string>
+    <string name="str_user_details">Change User Details</string>
+    <string name="str_contact_details">Change Contact Details</string>
+
+
+    <!--for live video streaming string start-->
+    <string name="live_indicator">on-air</string>
+    <string name="start_broadcasting">Start Broadcasting</string>
+    <string name="stream_name">Stream Name</string>
+    <string name="nocamera">No camera exists in your device</string>
+    <string name="camera_not_running_properly">Camera is not running properly</string>
+    <string name="restart">Restart</string>
+    <string name="streaming_not_finished">Your previous broadcast still sends packets due to slow internet speed</string>
+    <string name="oopps_shouldnt_happen">Oopps this shouldn\'t be happened. Please let the library developer this status</string>
+    <string name="broadcast_connection_lost">Connection to media server is lost</string>
+    <string name="low_bandwidth">Network speed is low. Latency is increasing.</string>
+    <string name="not_eligible_for_broadcast">Your device is not eligible to broadcast. There is no hardware encoder.</string>
+    <string name="no_network_connectivity">You\'re not connected to any network. Please connect to Internet</string>
+    <string name="stop_broadcasting">Stop</string>
+    <string name="camera_permission_is_required">Camera permission is required to run this app</string>
+    <string name="microphone_permission_is_required">Microphone permission is required to run this app</string>
+    <string name="permission">Permission</string>
+    <string name="app_doesnot_work_without_permissions">App does not work without permissions. Please give Camera and Record Audio permission on app settings</string>
+
+
+    <string name="video">Video</string>
+
+    <string name="audio">Audio</string>
+
+    <string name="text">Text</string>
+
+    <string name="retry">Retry</string>
+
+    <string name="selection_disabled">Disabled</string>
+
+    <string name="selection_default">Default</string>
+
+    <string name="selection_default_none">Default (none)</string>
+
+    <!--<string name="unexpected_intent_action">Unexpected intent action: <xliff:g id="action">%1$s</xliff:g></string>-->
+
+    <string name="enable_random_adaptation">Enable random adaptation</string>
+
+    <string name="error_drm_not_supported">Protected content not supported on API levels below 18</string>
+
+    <string name="error_drm_unsupported_scheme">This device does not support the required DRM scheme</string>
+
+    <string name="error_drm_unknown">An unknown DRM error occurred</string>
+
+    <string name="error_no_decoder">This device does not provide a decoder for <xliff:g id="mime_type">%1$s</xliff:g></string>
+
+    <string name="error_no_secure_decoder">This device does not provide a secure decoder for <xliff:g id="mime_type">%1$s</xliff:g></string>
+
+    <string name="error_querying_decoders">Unable to query device decoders</string>
+
+    <string name="error_instantiating_decoder">Unable to instantiate decoder <xliff:g id="decoder_name">%1$s</xliff:g></string>
+
+    <string name="error_unsupported_video">Media includes video tracks, but none are playable by this device</string>
+
+    <string name="error_unsupported_audio">Media includes audio tracks, but none are playable by this device</string>
+
+    <string name="storage_permission_denied">Permission to access storage was denied</string>
+
+    <string name="sample_list_load_error">One or more sample lists failed to load</string>
+    <string name="stream_not_started">Failed to start. Please check server url and security credentials.</string>
+    <!--for live video streaming string end-->
+
+
+    <!--feedback-->
+    <string name="strfeedback_title">Feedback</string>
+    <string name="strfeedback_contant">Give Your Feedback</string>
+    <string name="strfeedback_contant_hint">Give Your Feedback Here</string>
+
+
+    <string name="strpickImage">Pick Image</string>
+    <string name="struploadImage">Upload Image</string>
+
+
+    <string name="start_quiz">Start Quiz</string>
+    <string name="previous_quiz">View Score</string>
+    <string name="toper_quiz">Quiz Toper</string>
+    <string name="instruction">Instruction About Quiz</string>
+    <!--1.Your Quiz will be aggregated \n 2. Score will be aggregated only after the results are announced in the next quiz \n 3. The top winners of the quiz will be announced during the Unjalur Aradhani. the top winners will receive prizes from sri Swamigal \n4. Please provide answers to all the questions in one shot  \n5. You will be allowed to answer the quiz only once. if you have completed this quiz and saved it, you will not be able to change your responses. \n6. As of now, there is no negative marking for incorrect answers.\n7. In case of any disputes or queries, Sri Swamigal's decision will be final.\n 8. December 2018 quiz was the last quiz for the year. Jan 2019 quiz onwards will be considered for next year. Scores for Jan 2019 will start from Zero.-->
+    <string name="quiz_note1">1.Your Quiz will be aggregated </string>
+    <string name="quiz_note2">2. Score will be aggregated only after the results are announced in the next quiz </string>
+    <string name="quiz_note3">3. The top winners of the quiz will be announced during the Unjalur Aradhani. the top winners will receive prizes from sri Swamigal.</string>
+    <string name="quiz_note4">4. Please provide answers to all the questions in one shot </string>
+    <string name="quiz_note5">5. You will be allowed to answer the quiz only once. if you have completed this quiz and saved it, you will not be able to change your responses.</string>
+    <string name="quiz_note6">6. As of now, there is no negative marking for incorrect answers.</string>
+    <string name="quiz_note7">7. In case of any disputes or queries, Sri Swamigals decision will be final.</string>
+    <string name="quiz_note8">8. December 2018 quiz was the last quiz for the year. Jan 2019 quiz onwards will be considered for next year. Scores for Jan 2019 will start from Zero.</string>
+
+</resources>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup.UserLoginDetailsActivity"
+    android:background="@color/colorPrimary"
+    >
+
+    <ImageView
+        android:id="@+id/img_title_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/img_title_banner" />
+
+    <TextView
+        android:id="@+id/txt_title_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_title_banner"
+        android:gravity="center"
+        android:text="@string/registration"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_title"
+        android:padding="@dimen/primary_details_registration_text_padding"
+        android:fontFamily="@font/roboto_medium"/>
+    <TextView
+        android:id="@+id/txt_user_login_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_title_reg"
+        android:gravity="center"
+        android:text="@string/user_login_details"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/button_text_size"
+        android:fontFamily="@font/roboto_medium" />
+
+
+    <ScrollView
+        android:id="@+id/scroll_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_user_login_details"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/primary_details_registration_ll_view_padding"            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose One"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size16"
+                android:fontFamily="@font/roboto_regular"
+                />
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/sp_choose_one"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/primary_details_next_button_marginbottom"
+                android:layout_marginTop="@dimen/primary_details_next_button_margintop"
+                android:prompt="@string/select"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:text="About You"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size16"
+                android:fontFamily="@font/roboto_regular"
+                />
+            <EditText android:id="@+id/input_about_you"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:gravity="left"
+                android:hint="About you"
+                android:textColor="@color/primary_text"
+                android:background="@color/bg_edit_text_color"
+                android:textSize="@dimen/text_view_size"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:fontFamily="@font/roboto_regular"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:text="@string/email_id"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size16"
+                android:fontFamily="@font/roboto_regular"
+                />
+            <EditText android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="@string/email_id"
+                android:textColor="@color/primary_text"
+                android:background="@color/bg_edit_text_color"
+                android:textSize="@dimen/text_view_size"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:fontFamily="@font/roboto_regular"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:text="@string/user_id"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size16"
+                android:fontFamily="@font/roboto_regular"
+                />
+            <EditText android:id="@+id/input_user_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="@string/user_id"
+                android:textColor="@color/primary_text"
+                android:background="@color/bg_edit_text_color"
+                android:textSize="@dimen/text_view_size"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:fontFamily="@font/roboto_regular"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:text="@string/password"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size16"
+                android:fontFamily="@font/roboto_regular"
+                />
+
+            <EditText android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/password"
+                android:textColor="@color/primary_text"
+                android:background="@color/bg_edit_text_color"
+                android:textSize="@dimen/text_view_size"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:fontFamily="@font/roboto_regular"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:text="@string/retypepassword"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size16"
+                android:fontFamily="@font/roboto_regular"
+                />
+
+            <EditText android:id="@+id/input_re_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/retypepassword"
+                android:textColor="@color/primary_text"
+                android:background="@color/bg_edit_text_color"
+                android:textSize="@dimen/text_view_size"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:fontFamily="@font/roboto_regular"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/primary_details_next_button_marginbottom"
+                android:layout_marginTop="@dimen/primary_details_next_button_margintop"
+                android:padding="@dimen/primary_details_next_button_padding"
+                android:text="Next"
+                android:textSize="@dimen/button_text_size"
+                android:layout_gravity="right"
+                android:background="@drawable/bg_primary_button_shape"
+                android:textColor="@color/text_white"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

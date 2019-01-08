@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".userProfile.ProfileActivity">
+    <!--title view-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--user details-->
+            <RelativeLayout
+                android:id="@+id/ll_user_prime_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/profile_activity_margin_right">
+                <!--user name and user type-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toEndOf="@+id/img_user_photo"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/txt_user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="left"
+                        android:padding="@dimen/event_bottom_margin"
+                        android:text="Mr. Sathish Lee "
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/text_view_size"
+                        android:textAllCaps="true"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img_user_type"
+                            android:layout_width="@dimen/dashboard_ll_dot_img_width"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="@dimen/event_ll_padding"
+                            android:gravity="center"
+                            android:src="@drawable/shape_user_status_normal_with_video"
+
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/txt_use_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="left"
+                            android:padding="@dimen/event_bottom_margin"
+                            android:text="Normal"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/text_view_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--user profile photo-->
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_user_photo"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:src="@drawable/ic_launcher"
+                    android:visibility="visible"
+                    android:background="@color/content_background"/>
+
+               <!-- </LinearLayout>-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/revl_primary_details_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_user_prime_view">
+
+                <ImageView
+                    android:id="@+id/img_add_cover_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/event_bottom_padding"
+                    android:src="@drawable/ic_add_cover_photo_24dp"
+                    android:visibility="gone" />
+
+                <!--        <ImageView-->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_user_photo_1"
+                    android:layout_width="@dimen/profile_activity_img_user_widht"
+                    android:layout_height="@dimen/profile_activity_img_user_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/profile_activity_img_user_margin_right"
+                    android:layout_marginTop="@dimen/profile_activity_img_user_margin_top"
+                    android:src="@drawable/ic_dash_board_person"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/img_user_type_1"
+                    android:layout_width="@dimen/profile_activity_img_dot_widht"
+                    android:layout_height="@dimen/profile_activity_img_dot_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/profile_activity_img_dot_margin_right"
+                    android:layout_marginTop="@dimen/profile_activity_img_dot_margin_top"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_user_name_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/profile_activity_text_view_margin_right"
+                    android:layout_marginTop="@dimen/profile_activity_text_view_margin_top"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_bold"
+                    android:padding="@dimen/profile_activity_text_view_padding"
+                    android:text="Welcome Anandan"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_event_title"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_use_email_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/profile_activity_text_email_margin_right"
+                    android:layout_marginTop="@dimen/profile_activity_text_email_margin_top"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_regular"
+                    android:padding="@dimen/profile_activity_text_view_padding"
+                    android:text="Welcome Anandan"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_view_size"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/profile_activity_margin_left"
+                    android:layout_marginRight="@dimen/profile_activity_margin_right"
+                    android:background="@color/bgcolor_but_cancel"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/profile_activity_padding"
+                        android:src="@drawable/ic_location_24dp" />
+
+                    <TextView
+                        android:id="@+id/txt_user_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto_regular"
+                        android:padding="@dimen/profile_activity_padding"
+                        android:text=""
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/text_view_size" />
+                </LinearLayout>
+
+            </RelativeLayout>
+            <!--contact and additional details-->
+            <LinearLayout
+                android:id="@+id/ll_contact_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/revl_primary_details_view"
+                android:layout_marginLeft="@dimen/profile_activity_margin_left"
+                android:layout_marginRight="@dimen/profile_activity_margin_right"
+                android:background="@drawable/bg_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/profile_activity_padding"
+                    android:src="@drawable/ic_call_24dp" />
+
+                <TextView
+                    android:id="@+id/txt_contact_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_regular"
+
+                    android:padding="@dimen/profile_activity_padding"
+                    android:text="+91 9876543210"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/text_view_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_landline_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_contact_view"
+                android:layout_marginLeft="@dimen/profile_activity_margin_left"
+                android:layout_marginRight="@dimen/profile_activity_margin_left"
+                android:layout_marginTop="@dimen/profile_activity_margin_left"
+                android:background="@color/content_background"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/profile_activity_img_width"
+                    android:layout_height="@dimen/profile_activity_img_height"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_event_show_phone_receiver" />
+
+                <TextView
+                    android:id="@+id/txt_landline_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:padding="@dimen/profile_activity_padding"
+                    android:text="+91 9876543210"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_view_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_how_do_u_know_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_landline_view"
+                android:layout_marginLeft="@dimen/profile_activity_margin_left"
+                android:layout_marginRight="@dimen/profile_activity_margin_left"
+                android:layout_marginTop="@dimen/profile_activity_margin_left"
+                android:background="@color/content_background"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/profile_activity_img_width"
+                    android:layout_height="@dimen/profile_activity_img_height"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_event_show_phone_receiver" />
+
+                <TextView
+                    android:id="@+id/txt_how_do_u_know"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:padding="@dimen/profile_activity_padding"
+                    android:text="+91 9876543210"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_view_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_additional_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_how_do_u_know_view"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/content_background"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_event_show_phone_receiver" />
+
+                <TextView
+                    android:id="@+id/txt_additional_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="+91 9876543210"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_view_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_contact_view"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <!--personal info-->
+                <LinearLayout
+                    android:id="@+id/ll_user_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/profile_activity_padding"
+                        android:src="@drawable/ic_profile_24dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto_regular"
+                        android:padding="5dp"
+                        android:text="Devotee Personal Info"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/text_view_size" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_chevron_right_black_24dp" />
+                </LinearLayout>
+
+
+                <!--Additional info-->
+                <LinearLayout
+                    android:id="@+id/ll_additinal_info_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_user_view"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/profile_activity_padding"
+                        android:src="@drawable/ic_profile_24dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto_regular"
+                        android:padding="5dp"
+                        android:text="Devotee Additional Info"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/text_view_size" />
+
+                    <ImageView
+                        android:layout_width="@dimen/profile_activity_img_width"
+                        android:layout_height="@dimen/profile_activity_img_height"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_chevron_right_black_24dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_upload_profile_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_additinal_info_view"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/profile_activity_padding"
+                        android:src="@drawable/ic_file_upload_black_24dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto_regular"
+                        android:padding="5dp"
+                        android:text="Upload Profile Photo"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/text_view_size" />
+
+                    <ImageView
+                        android:layout_width="@dimen/profile_activity_img_width"
+                        android:layout_height="@dimen/profile_activity_img_height"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_chevron_right_black_24dp" />
+                </LinearLayout>
+                <!--Log in info-->
+                <LinearLayout
+                    android:id="@+id/ll_login_details_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_additinal_info_view"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/profile_activity_padding"
+                        android:src="@drawable/ic_password_24dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto_regular"
+                        android:padding="5dp"
+                        android:text="Change Password"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/text_view_size" />
+
+                    <ImageView
+                        android:layout_width="@dimen/profile_activity_img_width"
+                        android:layout_height="@dimen/profile_activity_img_height"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_chevron_right_black_24dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--sign out-->
+            <Button
+                android:id="@+id/but_sign_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/profile_activity_margin_left"
+                android:layout_weight="1"
+                android:background="@drawable/bg_primary_button_shape"
+                android:text="@string/str_sign_out"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_text_size" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

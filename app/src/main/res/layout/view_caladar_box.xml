@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/calandar_background">
+    <LinearLayout
+        android:id="@+id/calender_top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_margin="5dp"
+        >
+        <ImageView
+            android:id="@+id/but_previus_month"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="left"
+            android:src="@drawable/ic_view_calandar_previus" />
+        <TextView
+            android:id="@+id/txt_month_year"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="May 2018"
+            android:textSize="@dimen/event_text_size"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_medium"
+            />
+        <ImageView
+            android:id="@+id/but_next_montn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_view_calandar_next"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="7"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sun"
+            android:textSize="@dimen/event_text_size"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_medium" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mon"
+            android:textSize="@dimen/event_text_size"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_medium"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tue"
+            android:textSize="@dimen/event_text_size"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_medium"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wed"
+            android:textSize="@dimen/event_text_size"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_medium"  />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The"
+            android:textSize="@dimen/event_text_size"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_medium"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fri"
+            android:textSize="@dimen/event_text_size"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_medium" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sat"
+            android:textSize="@dimen/event_text_size"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_medium" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/grid_calander"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="7">
+
+    </GridView>
+</LinearLayout>

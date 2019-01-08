@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.satvatinfosole.ssss.sangam">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RequestActivity" />
+        <activity android:name=".signup.PrimaryDetailsActivity">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="ssss-sangam.com"
+                    android:pathPrefix="/root"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".signup.ContactDetailsActivity" />
+        <activity android:name=".signup.UserLoginDetailsActivity" />
+        <activity android:name=".dashboard.DashBoardActivity" />
+        <activity android:name=".events.EventMainActivity" />
+        <activity android:name=".events.EventListActivity" />
+        <activity android:name=".events.ShowEventActivity" />
+        <activity android:name=".userProfile.ProfileActivity" />
+        <activity android:name=".userProfile.ProfileDetailsActivity" />
+        <activity android:name=".gallery.PhotoGalleryActivity" />
+        <activity android:name=".gallery.VideoGalleryActivity" />
+        <activity android:name=".gallery.PhotoViewActivity" />
+        <activity android:name=".gallery.VideoViewActivity" />
+        <activity android:name=".gallery.FullScreenVideoActivity" />
+        <activity android:name=".userProfile.AdditionalInfoActivity" />
+        <activity android:name=".userProfile.LoginDetailsActivity" />
+        <activity android:name=".userProfile.EditProfileActivity" />
+        <activity
+            android:name=".liveVideoStream.LiveVideoPlayerActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".quiz.QuizActivity" />
+        <activity android:name=".quiz.QuizHomeActivity" />
+        <activity android:name=".feedback.FeedbackActivity" />
+        <activity android:name=".dashboard.UnApprovalUserActivity" />
+        <activity android:name=".userProfile.UploadProfilePhotoActivity" />
+
+        <!-- Firebase Notifications -->
+        <service android:name=".notification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".notification.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- ./Firebase Notifications -->
+        <activity android:name=".notification.NotificationListActivity" />
+        <activity android:name=".notification.NotificationDetailsActivity" />
+        <activity android:name=".events.EventImageViewActivity" />
+        <activity android:name=".quiz.QuizReportViewActivity" />
+        <activity android:name=".quiz.TopQuiznerActivity" />
+        <activity android:name=".quiz.QuizRunnerActivity"></activity>
+    </application>
+
+</manifest>

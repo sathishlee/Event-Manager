@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".quiz.QuizHomeActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/event_title_height"
+        android:background="@color/color_title_bar">
+
+        <ImageView
+            android:id="@+id/img_back_press"
+            android:layout_width="@dimen/event_title_height"
+            android:layout_height="@dimen/event_title_height"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/event_title_height"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="Quiz Home"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_title" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_title_bar"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:padding="@dimen/event_bottom_padding"
+        android:layout_marginRight="@dimen/event_bottom_padding"
+        android:layout_marginLeft="@dimen/event_bottom_padding"
+        android:text="@string/instruction"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_event_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rvel_dasgboard_row_one"
+        android:layout_below="@+id/instruction"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/event_bottom_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/content_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:padding="@dimen/event_bottom_padding"
+                android:text="@string/quiz_note1"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:padding="@dimen/event_bottom_padding"
+                android:text="@string/quiz_note2"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:padding="@dimen/event_bottom_padding"
+                android:text="@string/quiz_note3"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:padding="@dimen/event_bottom_padding"
+                android:text="@string/quiz_note4"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:padding="@dimen/event_bottom_padding"
+                android:text="@string/quiz_note5"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:padding="@dimen/event_bottom_padding"
+                android:text="@string/quiz_note6"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:padding="@dimen/event_bottom_padding"
+                android:text="@string/quiz_note7"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="@dimen/event_bottom_padding"
+                android:text="@string/quiz_note8"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size16"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rvel_dasgboard_row_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/event_bottom_padding"
+        android:layout_marginLeft="@dimen/event_bottom_padding"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_start_quiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_dashboared_image_outer"
+                android:padding="15dp"
+                android:src="@drawable/ic_writing_tool" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ll_start_quiz"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center_horizontal"
+            android:text="@string/start_quiz"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_view_size"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/ll_view_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_dashboared_image_outer"
+                android:padding="15dp"
+                android:src="@drawable/ic_view_score" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_view_score"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center_horizontal"
+            android:text="@string/previous_quiz"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_view_size"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/ll_quiz_toper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_dashboared_image_outer"
+                android:padding="15dp"
+                android:src="@drawable/ic_toppers" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ll_quiz_toper"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center_horizontal"
+            android:text="@string/toper_quiz"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_view_size"
+            android:visibility="visible" />
+        <!--row 2-->
+
+
+    </RelativeLayout>
+</RelativeLayout>

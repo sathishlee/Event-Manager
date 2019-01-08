@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".quiz.QuizReportViewActivity">
+    <LinearLayout
+        android:id="@+id/ll_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/event_title_height"
+        android:background="@color/color_title_bar">
+
+        <ImageView
+            android:id="@+id/img_back_press"
+            android:layout_width="@dimen/event_title_height"
+            android:layout_height="@dimen/event_title_height"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/event_title_height"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="Quiz Report"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_title" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_score_view"
+        android:layout_below="@+id/ll_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/event_bottom_padding"
+        android:visibility="visible">
+        <TextView
+            android:id="@+id/txt_your_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Your Scores"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_view_size"
+            android:layout_margin="@dimen/event_bottom_margin"/>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_below="@+id/txt_your_score"
+          android:background="@drawable/bg_dash_board_content"
+          android:padding="@dimen/event_bottom_margin">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Id"
+                android:layout_weight=".8"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="@dimen/text_view_size"
+                android:textColor="@color/primary_text"
+                android:padding="@dimen/event_bottom_margin"/>
+            <TextView
+                android:id="@+id/txt_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="saranya"
+                android:layout_weight="1.2"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="@dimen/text_view_size"
+                android:textColor="@color/primary_text"
+                android:padding="@dimen/event_bottom_margin"/>
+        </LinearLayout>
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Previous Score"
+                android:layout_weight=".8"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="@dimen/text_view_size"
+                android:textColor="@color/primary_text"
+                android:padding="@dimen/event_bottom_margin"/>
+            <TextView
+                android:id="@+id/txt_previous_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_weight="1.2"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="@dimen/text_view_size"
+                android:textColor="@color/primary_text"
+                android:padding="@dimen/event_bottom_margin"/>
+        </LinearLayout>
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Cumulative Score"
+                android:layout_weight=".8"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="@dimen/text_view_size"
+                android:textColor="@color/primary_text"
+                android:padding="@dimen/event_bottom_margin"/>
+            <TextView
+                android:id="@+id/txt_cum_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="220"
+                android:layout_weight="1.2"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="@dimen/text_view_size"
+                android:textColor="@color/primary_text"
+                android:padding="@dimen/event_bottom_margin"/>
+        </LinearLayout>
+
+
+      </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_last_quiz_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_score_view"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/event_bottom_padding"
+        android:layout_marginLeft="@dimen/event_bottom_padding">
+        <TextView
+            android:id="@+id/txt_last_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Previous Quiz"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_event_title"
+            android:layout_margin="@dimen/event_bottom_margin"
+            android:gravity="center_horizontal"
+            android:visibility="gone"/>
+        <TextView
+
+            android:id="@+id/txt_last_quiz_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="December 2018"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_view_size16"
+            android:layout_margin="@dimen/event_bottom_margin"
+            android:gravity="center_horizontal"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recv_last_quiz_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

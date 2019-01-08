@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gallery.PhotoViewActivity"
+    android:background="@color/colorPrimary">
+    <LinearLayout
+        android:id="@+id/ll_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/event_title_height"
+        android:background="@color/colorPrimaryDark">
+        <ImageView
+            android:id="@+id/img_back_press"
+            android:layout_width="@dimen/event_title_height"
+            android:layout_height="@dimen/event_title_height"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/txt_event_type"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/event_title_height"
+            android:text="Image"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_title"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_bold"/>
+    </LinearLayout>
+    <RelativeLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_title_bar"
+        android:layout_margin="@dimen/photo_gallery_margin">
+<LinearLayout
+    android:id="@+id/ll_media_details_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight=".5">
+        <TextView
+            android:id="@+id/txt_media_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MEDIA TITLE"
+            android:textSize="@dimen/text_view_size"
+            android:textColor="@color/white"
+            android:padding="@dimen/photo_gallery_text_padding"
+            android:fontFamily="@font/roboto_medium"/>
+        <TextView
+            android:id="@+id/txt_media_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="@dimen/text_view_size16"
+            android:textColor="@color/primary_text"
+            android:padding="@dimen/photo_gallery_text_padding"
+            android:fontFamily="@font/roboto_regular"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1.5">
+            <TextView
+                android:id="@+id/txt_photo_counter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1/25 "
+                android:textSize="@dimen/text_event_title"
+                android:textColor="@color/white"
+                android:padding ="@dimen/photo_gallery_text_padding"
+                android:layout_gravity="top"
+                android:gravity="right"
+                android:fontFamily="@font/roboto_regular"/>
+
+        </LinearLayout>
+
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/ll_photo_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/txt_photo_title"
+    android:layout_below="@+id/ll_media_details_view"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/txt_slide_counter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1/25"
+        android:textSize="@dimen/text_title"
+        android:textColor="@color/white"
+        android:padding="@dimen/photo_gallery_text_padding"
+        android:layout_gravity="top"
+        android:gravity="right"
+        android:visibility="gone"
+        android:fontFamily="@font/roboto_regular"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/img_seleced_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:src="@color/white"/>
+</LinearLayout>
+
+       <!-- <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="bottom"
+            android:padding="10dip"
+            app:centered="true"
+            app:fillColor="#ff0099"
+            app:pageColor="#FF0000"
+            app:snap="false" />-->
+<TextView
+    android:id="@+id/txt_photo_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/recv_photo_list"
+    android:text="BHAJANAI"
+    android:textSize="@dimen/text_view_size"
+    android:textColor="@color/white"
+    android:gravity="center"
+    android:padding="@dimen/photo_gallery_text_padding"
+    android:fontFamily="@font/roboto_regular"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recv_photo_list"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/photo_gallery_recycler_view_height"
+            android:layout_above="@+id/but_slide_show"
+            android:visibility="visible"
+            android:orientation="horizontal"/>
+        <Button
+            android:id="@+id/but_slide_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size"
+            android:background="@drawable/bg_primary_button_shape"
+            android:text="Slide Show"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/photo_gallery_text_padding"
+            android:fontFamily="@font/roboto_bold"
+            />
+    </RelativeLayout>
+</RelativeLayout>

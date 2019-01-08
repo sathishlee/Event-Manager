@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#ECAE1B</color>
+    <color name="colorPrimaryDark">#B28614</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="color_title_bar">#8B6400</color>
+
+    <color name="bg_button_color">#B28614</color>
+    <color name="bg_edit_text_color">#e5e9b9</color>
+    <color name="primary_text">#000000</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#212121</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blue">#1118e6</color>
+
+    <color name="bgcolor_alert_dailog">#FFFFFF</color>
+    <color name="bgcolor_but_ok">#8B6400</color>
+    <color name="bgcolor_but_cancel">#D3C5A1</color>
+    <color name="txtcolor_alert_msg">#000000</color>
+
+    <color name="content_background">#50ffffff</color>
+    <color name="calandar_background">#b2ffffff</color>
+
+
+    <!--Event colors-->
+    <color name="color_annul_event">#E7C5F0</color>
+    <color name="color_hastham">#FFBB87</color>
+    <color name="color_poosam">#FFEBB6</color>
+    <color name="color_swamigal_visit">#D2EDA2</color>
+
+
+
+
+    <color name="navy">#6699FF</color>
+    <color name="sky">#0099CC</color>
+    <color name="gray">#808080</color>
+    <color name="lightgray">#e7e7e7</color>
+    <color name="lightgray02">#bfbfbf</color>
+    <color name="dark">#000015</color>
+    <color name="lightgreen">#336666</color>
+    <color name="orrange">#e33d1b</color>
+    <color name="darkorrange">#cc2303</color>
+
+
+
+    <!--profile details activity-->
+    <color name="txt_user_profile_lable_color">#8B6400</color>
+    <color name="txt_user_profile_content_color">#000000</color>
+
+    <!--event module color-->
+    <color name="txt_event_type_color">#303030</color>
+    <color name="bg_annual_event_color">#E7C5F0</color>
+    <color name="bg_hastham_event_color">#FFBB87</color>
+    <color name="bg_possam_event_color">#FFEBB6</color>
+    <color name="bg_swamigal_visit_event_color">#D2EDA2</color>
+    <color name="bg_event_time_color">#afffffff</color>
+    <color name="bg_event_title_color">#beffffff</color>
+
+    <color name="colorerror">#ff0000</color>
+
+
+    <color name="bg_content_round_shape">#beffffff</color>
+    <color name="bg_dash_board_round_shape">#a57a13</color>
+    <color name="bg_dash_board_flash_news_shape">#f2c65f</color>
+    <color name="bg_primary_button">#946b03</color>
+    <color name="bg_secondary_button">#d3c5a1</color>
+</resources>

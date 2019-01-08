@@ -1,0 +1,889 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+    <!--title view start-->
+    <LinearLayout
+        android:id="@+id/ll_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/event_title_height"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/img_back_press"
+            android:layout_width="@dimen/event_title_height"
+            android:layout_height="@dimen/event_title_height"
+            android:layout_gravity="center"
+
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:padding="@dimen/event_ll_padding"/>
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/event_title_height"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Edit Personal Info"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_title"
+            android:fontFamily="@font/roboto_bold" />
+
+    </LinearLayout>
+
+    <!--title view end-->
+
+    <!--scroll view start body of content placed here-->
+    <ScrollView
+        android:id="@+id/scrlv_user_primary_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_title_view">
+        <!--inner layout start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <!--primary details edit start-->
+            <LinearLayout
+                android:id="@+id/ll_edit_primary_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <!--First name view start-->
+                <LinearLayout
+                    android:id="@+id/ll_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/profile_view_card_img_width"
+                        android:layout_height="@dimen/profile_view_card_img_height"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/edit_profile_img_margin"
+                        android:src="@drawable/ic_profile_24dp"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/txt_profile_user_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="10dp"
+                            android:text=" "
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/text_view_size"
+                            android:fontFamily="@font/roboto_regular"
+                            />
+
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="First Name"
+                            android:textColor="@color/bgcolor_but_ok"
+                            android:textSize="@dimen/text_view_size16"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/profile_view_card_img_width"
+                        android:layout_height="@dimen/profile_view_card_img_height"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/edit_profile_img_margin"
+                        android:src="@drawable/ic_profile_24dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/txt_profile_user_lname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="10dp"
+                            android:text=" "
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/text_view_size"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Last Name"
+                            android:textColor="@color/bgcolor_but_ok"
+                            android:textSize="@dimen/text_view_size16"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--First name view end-->
+
+                <!--Father name view start-->
+
+                <LinearLayout
+                    android:id="@+id/ll_father_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/profile_view_card_img_width"
+                        android:layout_height="@dimen/profile_view_card_img_height"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/edit_profile_img_margin"
+                        android:src="@drawable/ic_profile_24dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/txt_profile_father_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="10dp"
+                            android:text=" "
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/text_view_size"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Father Name"
+                            android:textColor="@color/bgcolor_but_ok"
+                            android:textSize="@dimen/text_view_size16"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Father name view end-->
+
+
+                <!--Dob view start-->
+
+                <LinearLayout
+                    android:id="@+id/ll_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/profile_view_card_img_width"
+                        android:layout_height="@dimen/profile_view_card_img_height"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/edit_profile_img_margin"
+                        android:src="@drawable/ic_dob_36"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/txt_profile_dob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/text_view_size"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Dob"
+                            android:textColor="@color/bgcolor_but_ok"
+                            android:textSize="@dimen/text_view_size16"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Dob view end-->
+
+
+                <!--Address view start-->
+
+                <LinearLayout
+                    android:id="@+id/ll_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/profile_view_card_img_width"
+                        android:layout_height="@dimen/profile_view_card_img_height"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/edit_profile_img_margin"
+                        android:src="@drawable/ic_location_24dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/txt_profile_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/text_view_size"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Address"
+                            android:textColor="@color/bgcolor_but_ok"
+                            android:textSize="@dimen/text_view_size16"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--city-->
+                <LinearLayout
+                    android:id="@+id/ll_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/profile_view_card_img_width"
+                        android:layout_height="@dimen/profile_view_card_img_height"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/edit_profile_img_margin"
+                        android:src="@drawable/ic_location_24dp"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/txt_profile_address_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/text_view_size"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="City"
+                            android:textColor="@color/bgcolor_but_ok"
+                            android:textSize="@dimen/text_view_size16"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--state-->
+                <LinearLayout
+                    android:id="@+id/ll_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_content"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/profile_view_card_img_width"
+                        android:layout_height="@dimen/profile_view_card_img_height"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/edit_profile_img_margin"
+                        android:src="@drawable/ic_location_24dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/txt_profile_address_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/text_view_size"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="State"
+                            android:textColor="@color/bgcolor_but_ok"
+                            android:textSize="@dimen/text_view_size16"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--Country-->
+                <LinearLayout
+                    android:id="@+id/ll_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/profile_view_card_img_width"
+                        android:layout_height="@dimen/profile_view_card_img_height"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/edit_profile_img_margin"
+                        android:src="@drawable/ic_location_24dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/txt_profile_address_country"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/text_view_size16"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Country"
+                            android:textColor="@color/bgcolor_but_ok"
+                            android:textSize="@dimen/text_view_size"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--Pincode-->
+                <LinearLayout
+                    android:id="@+id/ll_pincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/profile_view_card_img_width"
+                        android:layout_height="@dimen/profile_view_card_img_height"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_location_24dp"/>
+
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/txt_profile_address_pincode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/text_view_size"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Pincode"
+                            android:textColor="@color/bgcolor_but_ok"
+                            android:textSize="@dimen/text_view_size16"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Address view end-->
+
+                <!--Phone view start-->
+
+                <LinearLayout
+                    android:id="@+id/ll_landline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/profile_view_card_img_width"
+                        android:layout_height="@dimen/profile_view_card_img_height"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/edit_profile_img_margin"
+                        android:src="@drawable/ic_call_24dp"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/txt_profile_landline"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:inputType="phone"
+                            android:padding="10dp"
+                            android:text=" "
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/text_view_size"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="LandLine"
+                            android:textColor="@color/bgcolor_but_ok"
+                            android:textSize="@dimen/text_view_size16"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/profile_view_card_img_width"
+                        android:layout_height="@dimen/profile_view_card_img_height"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/edit_profile_img_margin"
+                        android:src="@drawable/ic_call_24dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/txt_profile_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:inputType="phone"
+                            android:padding="10dp"
+                            android:text=" "
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/text_view_size"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Phone"
+                            android:textColor="@color/bgcolor_but_ok"
+                            android:textSize="@dimen/text_view_size16"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Phone view end-->
+
+                <!--Email view start-->
+
+                <LinearLayout
+                    android:id="@+id/ll_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/profile_view_card_img_width"
+                        android:layout_height="@dimen/profile_view_card_img_height"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/edit_profile_img_margin"
+                        android:src="@drawable/ic_email_24dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/txt_profile_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:inputType="textEmailAddress"
+                            android:padding="10dp"
+                            android:text=" "
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/text_view_size"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Email"
+                            android:textColor="@color/bgcolor_but_ok"
+                            android:textSize="@dimen/text_view_size16"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Email view end-->
+            </LinearLayout>
+            <!--primary details edit end-->
+
+
+            <!--edit additional info start-->
+            <LinearLayout
+                android:id="@+id/ll_edit_additional_info_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--hduk view start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_margin="@dimen/edit_profile_img_margin"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_how_do_you_know"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/txt_how_do_u_know"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/text_view_size"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="How do you know"
+                            android:textColor="@color/bgcolor_but_ok"
+                            android:textSize="@dimen/text_view_size16"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--hduk view end-->
+
+                <!--add info view start-->
+                <LinearLayout
+                    android:id="@+id/ll_edit_addi_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_margin="@dimen/edit_profile_img_margin"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_add_information"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/txt_add_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/text_view_size"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Additional info"
+                            android:textColor="@color/bgcolor_but_ok"
+                            android:textSize="@dimen/text_view_size16"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--add info view end-->
+            </LinearLayout>
+            <!--edit additional info end-->
+            <!--edit Log in details start-->
+            <LinearLayout
+                android:id="@+id/ll_edit_login_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--hduk view start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/edit_profile_img_margin"
+                        android:src="@drawable/ic_profile_24dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_user_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/text_view_size"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="User Id"
+                            android:textColor="@color/bgcolor_but_ok"
+                            android:textSize="@dimen/text_view_size16"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--hduk view end-->
+
+                <!--add info view start-->
+                <LinearLayout
+                    android:id="@+id/ll_edit_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/edit_profile_img_margin"
+                        android:src="@drawable/ic_password_24dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/txt_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="10dp"
+                            android:text=""
+                            android:inputType="textPassword"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/text_view_size"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Password"
+                            android:textColor="@color/bgcolor_but_ok"
+                            android:textSize="@dimen/text_view_size16"
+                            android:fontFamily="@font/roboto_regular"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--add info view end-->
+            </LinearLayout>
+            <!--edit Log in details end-->
+
+
+            <Button
+                android:id="@+id/but_submit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_primary_button_shape"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_text_size"
+                android:fontFamily="@font/roboto_bold"/>
+
+        </LinearLayout>
+        <!--inner layout end-->
+
+    </ScrollView>
+    <!--scroll view start body of content end-->
+
+
+</LinearLayout>

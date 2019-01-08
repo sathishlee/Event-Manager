@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:layout_margin="@dimen/gallery_dailog_box_morgin">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/gallery_dailog_box_morgin">
+
+        <TextView
+            android:id="@+id/txt_alert_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/event_ll_padding"
+            android:text="Choose Gallery"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_title"
+            android:fontFamily="@font/roboto_bold" />
+
+        <LinearLayout
+            android:id="@+id/ll_message_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/grid_margin"
+            android:background="@color/bgcolor_alert_dailog"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/dg_ll_photo_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/gallery_dailog_box_padding"
+                android:layout_margin="@dimen/gallery_dailog_box_morgin">
+
+                <ImageView
+                    android:id="@+id/list_img1"
+                    android:layout_width="@dimen/gallery_dailog_box_imgage_size"
+                    android:layout_height="@dimen/gallery_dailog_box_imgage_size"
+                    android:background="@color/colorPrimary"
+                    android:src="@drawable/ic_dash_board_gallery" />
+
+                <TextView
+                    android:id="@+id/list_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="Photo Gallery"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_title"
+                    android:fontFamily="@font/roboto_medium"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gallery_dailog_box_devider_heaght"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/dg_ll_video_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/gallery_dailog_box_padding"
+                android:layout_margin="@dimen/gallery_dailog_box_morgin">
+
+                <ImageView
+                    android:id="@+id/list_img2"
+
+                    android:layout_width="@dimen/gallery_dailog_box_imgage_size"
+                    android:layout_height="@dimen/gallery_dailog_box_imgage_size"
+                    android:background="@color/colorPrimary"
+                    android:src="@drawable/exo_controls_play" />
+
+                <TextView
+                    android:id="@+id/list_text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="Video Gallery"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_title"
+                    android:fontFamily="@font/roboto_medium"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gallery_dailog_box_devider_heaght"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal" />
+
+            <Button
+                android:id="@+id/but_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/gallery_dailog_box_morgin"
+                android:layout_weight="1"
+                android:background="@drawable/bg_primary_button_shape"
+                android:gravity="center"
+                android:text="@string/str_but_cancel"
+                android:textColor="@color/text_white"
+                android:fontFamily="@font/roboto_bold"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

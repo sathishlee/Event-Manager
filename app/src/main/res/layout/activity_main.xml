@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="@dimen/main_activity_margin"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/img_title_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/img_title_banner"
+        android:layout_gravity="top"/>
+
+    <ImageView
+        android:id="@+id/img_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+        android:src="@drawable/banner_img"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_name_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/img_banner"
+        android:background="#98403e"
+        android:weightSum="3">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sri Seshadri Swamigal"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/main_activity_swamigal_name_text_size"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Sri Kamakshi Amman"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/main_activity_swamigal_name_text_size"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sri Kuzhandaiananda Swamigal"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/main_activity_swamigal_name_text_size"
+            android:textStyle="bold"
+
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/img_kural"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_kural"
+        android:layout_below="@+id/ll_name_view"/>
+    <LinearLayout
+        android:id="@+id/ll_bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/main_activity_padding"
+        android:weightSum="2"
+        android:background="@color/bg_button_color">
+
+        <LinearLayout
+            android:id="@+id/ll_log_in_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_login"
+                android:padding="@dimen/main_activity_image_padding"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Login"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/main_activity_text_view_size"
+                android:fontFamily="@font/roboto_medium"/>
+        </LinearLayout>
+        <VideoView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"/>
+        <LinearLayout
+            android:id="@+id/ll_event_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:background="@color/bg_button_color">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_event_calender"
+                android:padding="@dimen/main_activity_image_padding"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Event Calender"
+                android:textSize="@dimen/main_activity_text_view_size"
+                android:textColor="@color/text_white"
+                android:fontFamily="@font/roboto_medium"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

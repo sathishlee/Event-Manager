@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".events.EventListActivity">
+    <LinearLayout
+        android:id="@+id/ll_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/event_title_height"
+        android:background="@color/color_title_bar">
+        <ImageView
+            android:id="@+id/img_back_press"
+            android:layout_width="@dimen/event_title_height"
+            android:layout_height="@dimen/event_title_height"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_gravity="center"
+            android:padding="@dimen/event_ll_padding" />
+        <TextView
+            android:id="@+id/txt_event_type"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/event_title_height"
+            android:text="EVENTS"
+
+            android:textSize="@dimen/text_title"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_bold"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_filter_view"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/event_title_height"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        >
+
+        <ImageView
+            android:id="@+id/img_fillter"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/event_title_height"
+            android:src="@drawable/ic_filter_list_black_24dp"
+            android:padding="@dimen/event_ll_padding"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/event_title_height"
+            android:text="Filter"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/text_view_size"
+            android:layout_gravity="center"
+            android:padding="@dimen/event_ll_padding"
+            android:fontFamily="@font/roboto_regular"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rvel_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_title_bar"
+        android:layout_marginLeft="@dimen/event_marginleft"
+        android:layout_marginRight="@dimen/event_marginright"
+        android:layout_marginTop="@dimen/event_marginleft"
+        android:layout_marginBottom="@dimen/event_marginright"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txt_event_of_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/event_text_padding"
+            android:text="Event of this month"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_event_title"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center_vertical"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_select_event_outer_shape"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="1dp"
+                >
+                <ImageButton
+                    android:id="@+id/img_grid_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_select_event_un_selected_shape"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_calandar_grid_list"
+                    />
+                <ImageButton
+                    android:id="@+id/img_list_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_select_event_selected_shape"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_calandar_bullet_list_drak"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recv_event_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rvel_title_view"
+        android:layout_margin="10dp"
+         />
+    <TextView
+        android:id="@+id/txt_event_not_available"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Events are not available on this month"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/text_view_size"
+        android:layout_gravity="center"
+        android:padding="@dimen/event_bottom_padding"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_below="@+id/recv_event_list"
+        android:visibility="gone"
+
+        />
+</RelativeLayout>

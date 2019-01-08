@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".signup.ContactDetailsActivity">
+
+    <ImageView
+        android:id="@+id/img_title_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/img_title_banner" />
+
+    <TextView
+        android:id="@+id/txt_title_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_title_banner"
+        android:gravity="center"
+        android:padding="@dimen/primary_details_registration_text_padding"
+        android:text="@string/registration"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_title"
+        android:fontFamily="@font/roboto_medium"/>
+
+    <TextView
+        android:id="@+id/txt_contact_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_title_reg"
+        android:gravity="center"
+        android:text="@string/contact_details"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/button_text_size"
+        android:fontFamily="@font/roboto_medium" />
+
+    <ScrollView
+        android:id="@+id/scroll_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_contact_details">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:padding="@dimen/primary_details_registration_ll_view_padding">
+
+            <!-- Address Label -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:text="@string/address1"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size16"
+                android:fontFamily="@font/roboto_regular"
+                />
+
+            <EditText
+                android:id="@+id/input_address_line_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_edit_text_color"
+                android:hint="@string/address1"
+                android:inputType="text"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size"
+                android:fontFamily="@font/roboto_regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:text="@string/address2"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size16"
+                android:fontFamily="@font/roboto_regular"
+                />
+
+            <EditText
+                android:id="@+id/input_address_line_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_edit_text_color"
+                android:hint="Address Line 2"
+                android:inputType="text"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size"
+                android:fontFamily="@font/roboto_regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:text="@string/city"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size16"
+                android:fontFamily="@font/roboto_regular"
+                />
+
+            <EditText
+                android:id="@+id/input_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_edit_text_color"
+                android:hint="@string/city"
+                android:inputType="text"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size"
+                android:fontFamily="@font/roboto_regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/state"
+                android:textSize="@dimen/text_view_size16"
+                android:fontFamily="@font/roboto_regular"
+                />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/sp_state"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/primary_details_next_button_marginbottom"
+                android:layout_marginTop="@dimen/primary_details_next_button_margintop"
+                android:background="@color/bg_edit_text_color"
+                android:prompt="@string/select"
+                android:visibility="gone"
+                />
+
+            <EditText
+                android:id="@+id/input_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_edit_text_color"
+                android:hint="@string/state"
+                android:inputType="text"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size"
+                android:fontFamily="@font/roboto_regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/country"
+                android:textSize="@dimen/text_view_size16"
+                android:fontFamily="@font/roboto_regular"
+                />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/sp_country"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/primary_details_next_button_marginbottom"
+                android:layout_marginTop="@dimen/primary_details_next_button_margintop"
+                android:background="@color/bg_edit_text_color"
+                android:prompt="@string/select"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/input_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_edit_text_color"
+                android:hint="@string/country"
+                android:inputType="text"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size"
+                android:fontFamily="@font/roboto_regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:text="@string/pincode"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size16"
+                android:fontFamily="@font/roboto_regular"
+                />
+
+            <EditText
+                android:id="@+id/input_pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_edit_text_color"
+                android:hint="@string/pincode"
+                android:inputType="text"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size"
+                android:fontFamily="@font/roboto_regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:text="@string/mobile"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size16"
+                android:fontFamily="@font/roboto_regular"
+                />
+
+            <EditText
+                android:id="@+id/input_mobile_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_edit_text_color"
+                android:hint="@string/mobile"
+                android:inputType="number"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size"
+                android:fontFamily="@font/roboto_regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:text="@string/landline"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size16"
+                android:fontFamily="@font/roboto_regular"
+                />
+
+            <EditText
+                android:id="@+id/input_landline_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_edit_text_color"
+                android:hint="@string/landline"
+                android:inputType="number"
+                android:padding="@dimen/primary_details_text_view_padding"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_view_size"
+                android:fontFamily="@font/roboto_regular"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_contact_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="@dimen/primary_details_next_button_marginbottom"
+                android:layout_marginTop="@dimen/primary_details_next_button_margintop"
+                android:background="@drawable/bg_primary_button_shape"
+                android:padding="@dimen/primary_details_next_button_padding"
+                android:text="Next"
+                android:textSize="@dimen/button_text_size"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto_bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

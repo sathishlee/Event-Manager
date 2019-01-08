@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="4dp"
+    android:background="@color/colorPrimary"
+    >
+
+    <ImageView
+        android:id="@+id/img_title_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/img_title_banner"
+        android:layout_gravity="top"/>
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_title_banner"
+        android:text="@string/email_for_verification"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_event_title"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_margin="@dimen/request_title_margin_top"
+        android:fontFamily="@font/roboto_medium"/>
+
+    <LinearLayout
+        android:id="@+id/_ll_login_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/request_layout_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:text="@string/email_id"
+            android:textSize="@dimen/text_view_size16"
+            android:padding="@dimen/request_text_padding"
+            android:fontFamily="@font/roboto_regular"/>
+
+        <EditText android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/user_name"
+            android:textColor="@color/primary_text"
+            android:background="@color/bg_edit_text_color"
+            android:textSize="@dimen/text_view_size"
+            android:padding="@dimen/request_text_padding"
+            android:fontFamily="@font/roboto_regular"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_but_send_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/request_button_margin_top"
+            android:background="@drawable/bg_primary_button_shape"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send_otp"
+                android:textSize="@dimen/button_text_size"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/request_button_margin"
+                android:textColor="@color/text_white"
+                android:fontFamily="@font/roboto_bold"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_login"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/request_button_margin"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_lock_lock"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"/>
+
+</RelativeLayout>

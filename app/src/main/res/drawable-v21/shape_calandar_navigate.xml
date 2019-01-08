@@ -1,0 +1,17 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <corners
+        android:radius="5dp"/>
+    <gradient
+        android:angle="45"
+         />
+    <solid
+        android:color="@color/colorPrimary"/>
+    <size
+        android:width="5dp"
+        android:height="5dp" />
+    <stroke
+        android:width="3dp"
+        android:color="#FFFFFF" />
+</shape>

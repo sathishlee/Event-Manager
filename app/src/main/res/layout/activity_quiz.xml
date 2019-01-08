@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".quiz.QuizActivity">
+    <LinearLayout
+        android:id="@+id/ll_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/event_title_height"
+        android:background="@color/color_title_bar">
+        <ImageView
+            android:id="@+id/img_back_press"
+            android:layout_width="@dimen/event_title_height"
+            android:layout_height="@dimen/event_title_height"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_gravity="center" />
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/event_title_height"
+            android:text="Quiz"
+            android:textSize="@dimen/text_title"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_bold"
+            />
+
+    </LinearLayout>
+<TextView
+    android:id="@+id/txt_quiz_title"
+    android:textSize="@dimen/text_event_title"
+    android:textColor="@color/text_white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Quiz Ttile"
+    android:gravity="center"
+    android:layout_below="@+id/ll_title_bar"
+    android:fontFamily="@font/roboto_medium"/>
+    <TextView
+    android:id="@+id/txt_quiz_duration"
+    android:textSize="@dimen/text_view_size16"
+    android:textColor="@color/text_white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Quiz Ttile"
+    android:gravity="center"
+    android:layout_below="@+id/txt_quiz_title"
+        android:fontFamily="@font/roboto_medium"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recv_quiz_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txt_quiz_duration"
+        android:layout_above="@+id/but_submit"/>
+    <Button
+        android:id="@+id/but_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="@drawable/bg_primary_button_shape"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/button_text_size"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/roboto_bold"/>
+</RelativeLayout>
